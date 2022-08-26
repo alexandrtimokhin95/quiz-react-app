@@ -23,13 +23,13 @@ const questions = [
   }, 
 ];
 
-function Result({correct}) {
+function Result({correct, appRestart}) {
   return (
     <div className="result">
       <img src="https://cdn-icons-png.flaticon.com/512/2278/2278992.png" />
       <h2>Вы отгадали {correct} ответа из {questions.length}</h2>
       <a href="/">
-        <button>Попробовать снова</button>
+        <button onClick={appRestart}>Попробовать снова</button>
       </a>
     </div>
   );
@@ -66,10 +66,14 @@ function App() {
     }
   }
 
+  const appRestart = () => {
+    window.location.reload();
+  }
+
   return (
     <div className="App">
       {
-        step !== questions.length ? <Game step={step} question={question} onClickVariant={onClickVariant} /> : <Result correct={correct} />
+        step !== questions.length ? <Game step={step} question={question} onClickVariant={onClickVariant} /> : <Result correct={correct} appRestart={appRestart}/>
       }
     </div>
   );
