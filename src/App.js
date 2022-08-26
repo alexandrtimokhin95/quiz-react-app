@@ -69,7 +69,7 @@ function App() {
   return (
     <div className="App">
       {
-        step != questions.length ? <Game step={step} question={question} onClickVariant={onClickVariant} /> : <Result correct={correct} />
+        step !== questions.length ? <Game step={step} question={question} onClickVariant={onClickVariant} /> : <Result correct={correct} />
       }
     </div>
   );
