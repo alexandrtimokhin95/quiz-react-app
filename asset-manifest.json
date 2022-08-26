@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/alexandrtimokhin95/quiz-react-app/static/css/main.645c60eb.css",
+    "main.js": "/alexandrtimokhin95/quiz-react-app/static/js/main.2a9ab66b.js",
+    "index.html": "/alexandrtimokhin95/quiz-react-app/index.html",
+    "main.645c60eb.css.map": "/alexandrtimokhin95/quiz-react-app/static/css/main.645c60eb.css.map",
+    "main.2a9ab66b.js.map": "/alexandrtimokhin95/quiz-react-app/static/js/main.2a9ab66b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.645c60eb.css",
+    "static/js/main.2a9ab66b.js"
+  ]
+}
